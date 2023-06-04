@@ -168,6 +168,19 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        // Property
+        App\Providers\PropertyRepositoryServiceProvider::class,
+        App\Providers\PropertyServiceServiceProvider::class,
+
+        // User
+        App\Providers\UserRepositoryServiceProvider::class,
+        App\Providers\UserServiceServiceProvider::class,
+
+        // Booking
+        App\Providers\BookingRepositoryServiceProvider::class,
+        App\Providers\BookingServiceServiceProvider::class,
+
     ])->toArray(),
 
     /*
