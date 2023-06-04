@@ -42,4 +42,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function properties()
+    {
+        return $this->hasMany(Property::class, 'lessor_id');
+    }
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class, 'lessee_id');
+    }
 }
